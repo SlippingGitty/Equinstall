@@ -75,7 +75,7 @@ clear
                 cd Equicord 
                 pnpm install --frozen-lockfile 
                 pnpm build 
-                pnpm inject
+                sudo pnpm inject
                 sleep 4
             # Downloads Equicord in home directory, opens folder, and presents the Equicord install menu.
                 ;;
@@ -90,13 +90,13 @@ clear
                 cd
                 cd Equicord 
                 clear
-                pnpm inject
+                sudo pnpm inject
                 sleep 4
             # Presents the Equicord install menu.
                 ;;
             4)
                 cd
-                cd Equicord && git pull && pnpm install --frozen-lockfile && pnpm build && clear && pnpm inject
+                cd Equicord && git pull && pnpm install --frozen-lockfile && pnpm build && clear && sudo pnpm inject
                 sleep 4
              # Updates Equicord and presents the install menu.
                 ;;
